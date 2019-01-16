@@ -1,5 +1,4 @@
 # Assignment 1
-Alexis Framness
 Due:Jan 19th, 2019
 
 ## Project/Goal
