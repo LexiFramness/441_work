@@ -1,5 +1,6 @@
-# Assignment 1 Due:Jan 19th, 2019
+# Assignment 1
 Alexis Framness
+Due:Jan 19th, 2019
 
 ## Project/Goal
 This weeks Assignment was to create a landing page that shared some information about ourselves. The webpage had to include a hero image, and optional use the parallax scrolling feature.
