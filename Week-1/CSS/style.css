@@ -1,31 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
-html {
-  width: 100%;
+ body, html {
   height: 100%;
-  background-image: url(../Week-1/images/background.jpg);
-  background-size: cover;
-  margin: 0;
+  width: 100%;
+  font-family: 'Oswald', sans-serif;
 }
 body {
-  width: inherit;
-  font-family: 'Oswald', sans-serif;
-  margin: 0;
-}
-a {
-  text-decoration: none;
+  background-image: url("../images/background.jpg");
 }
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Week-1/images/background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/me.jpeg");
 
   /* Set a specific height */
-  height: 50%;
+  height: 70%;
+  width: 100%;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   position: relative;
 }
 
@@ -37,4 +31,41 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+}
+.parallax {
+  /* The image used */
+  background-image: url("../images/background.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about {
+  padding-top: 10%;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 10%;
+}
+.about-me-text {
+  text-align: left;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 10px;
+}
+.hobby {
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+a {
+  color: white;
+  text-decoration: underline;
 }
