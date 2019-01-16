@@ -46,10 +46,9 @@ body {
   background-size: cover;
 }
 .about {
-  padding-top: 20%;
+  padding-top: 30%;
   padding-right: 10%;
   padding-left: 10%;
-  padding-bottom: 10%;
 }
 .about-me-text {
   text-align: left;
@@ -58,12 +57,26 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  padding: 10px;
+  padding-left: 10px;
 }
 .hobby {
   color: white;
-  padding: 10px;
+  padding-top: 0px;
+  padding-left: 10px;
   text-align: left;
+}
+.dog img{
+  border: 10;
+  border-color: white;
+  margin-top: 20px;
+  margin-left: 60px;
+}
+.dog img:hover{
+  opacity: 0.5;
+  border: 5;
+  border-color: rgb(117, 42, 187);
+  visibility: visible;
+  text-align: center;
 }
 a {
   color: white;
@@ -74,4 +87,7 @@ h1 {
   font-weight: bold;
   font-style: italic;
   text-decoration: underline;
+}
+p {
+  font-size: 20px;
 }
