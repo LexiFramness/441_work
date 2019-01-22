@@ -1,0 +1,6 @@
+console.log("THREE FAVORITE RESTAURANTS")
+console.log("Pi Pizza, Chick fil-a, Outback Steakhouse")
+console.log("THREE FAVORITE SNACKS")
+console.log("Blueberries, Pomegranate, Sliced Turkey")
+console.log("THREE FAVORITE FRUITS")
+console.log("Blueberries, Oranges, Strawberries")
