@@ -1,0 +1,63 @@
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Lexi's Web Technologies">
+      <meta name="author" content="Alexis Framness">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Adventure Game</title>
+      <link rel="stylesheet" type="text/css" href="./css/style.css">
+      <link rel="stylesheet" href="https://use.typekit.net/kok7wtj.css">
+    </head>
+  <body>
+    <div class="hero">
+      <div class="button">
+          <div class="wrapper">
+          <h2><center>Lets Go On An Adventure!</center></h2>
+          <p><center>This is the adventure of Bob. Bob is currently on a path, headed on an adventure. You must make decisions for Bob, once you make your choice, there is no going back. Good Luck!</center></p>
+          </div>
+            <div id="text"></div>
+              <div app>
+                <div>
+                  <form id="input" onsubmit="start()">
+                    <center><button type="submit" class="start" onclick="display()">Start</button></center>
+                  </form>
+                </div>
+              </div>
+
+          <script>
+              var a = document.getElementById("input");
+              var b;
+              function display() {
+	               a.style.display = "none";
+               }
+            start = function start() {
+              var reply = confirm("Are you ready?");
+              if (reply === false) {
+                alert("Oh No! You aren't ready for an adventure?");
+                alert("Come back when you are ready to go on an adventure!");
+ 	            }
+              else {
+                game();
+                console.log("start");
+              }
+            };
+          function game() {
+            document.getElementById("text").innerHTML = "Aventure Story.";
+            var firstQuestion = prompt("You are at a fork in the road. Do you go left? or right? \n\nleft or right");
+            if (firstQuestion === "right"){
+              alert("As you begin down the path, you notice a bandit hiding in a bush watching the left fork. You sneak up behind him and steal his coin! ");
+            }
+          else if (firstQuestion === "left"){
+            alert("Oh no! You were robbed and killed by a bandit!");
+          }
+          else {
+            alert ("Don't want to play? Comeback when you do!")
+          }
+
+          console.log("story");
+          }
+          </script>
+        </div>
+      </div>
+  </body>
+</html>

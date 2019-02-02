@@ -1,0 +1,13 @@
+html{
+height:100%;
+Width:100%;
+}
+body {
+background-color: gray;
+}
+.wrapper{
+  padding-top: 10%;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-bottom: 0%;
+}
