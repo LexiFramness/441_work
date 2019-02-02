@@ -1,6 +1,7 @@
 html{
 height:100%;
 Width:100%;
+font-family: 'Major Mono Display', monospace;
 }
 body {
 background-color: gray;
@@ -10,4 +11,11 @@ background-color: gray;
   padding-left: 30%;
   padding-right: 30%;
   padding-bottom: 0%;
+}
+.hero{
+  background-color: blue;
+  font-size: 17px;
+}
+h2{
+  font-size: 30px;
 }
