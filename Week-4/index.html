@@ -1,0 +1,100 @@
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Lexi's Web Technologies">
+      <meta name="author" content="Alexis Framness">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Adventure Game</title>
+      <link rel="stylesheet" type="text/css" href="./css/style.css">
+      <style>
+      @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+      </style>
+    </head>
+  <body>
+    <div class="hero">
+      <div class="button">
+          <div class="wrapper">
+          <h2><center>Lets Go On An Adventure!</center></h2>
+          <p><center>This is the adventure of Bob. Bob is currently on a path, headed on an adventure. You must make decisions for Bob, once you make your choice, there is no going back. Good Luck!</center></p>
+          </div>
+            <div id="text"></div>
+              <div app>
+                <div>
+                  <form id="input" onsubmit="start()">
+                    <center><button type="submit" class="start" onclick="display()">Start</button></center>
+                  </form>
+                </div>
+              </div>
+
+          <script>
+              var a = document.getElementById("input");
+              var b;
+              function display() {
+	               a.style.display = "none";
+               }
+            start = function start() {
+              var reply = confirm("Are you ready?");
+              if (reply === false) {
+                alert("Oh No! You aren't ready for an adventure?");
+                alert("Come back when you are ready to go on an adventure!");
+ 	            }
+              else {
+                game();
+                console.log("start");
+              }
+            };
+          function game() {
+            document.getElementById("text").innerHTML = "Aventure Story.";
+            var firstQuestion = prompt("You are at a fork in the road, in the middle of a forest. Do you go left? or right? \n\nleft or right");
+            if (firstQuestion === "right"){
+              alert("As you begin down the path, you notice a bandit hiding in a bush watching the left fork. You sneak up behind him and steal his coin! ");
+            var secondQuestion = prompt("Alright, you are now 30 coins richer. Do you want to head into town and spend your coin? Or head deeper into the forest? \n\ntown or deeper");
+                if (secondQuestion === "town"){
+                  alert("Great, Once in town, you head to the general store.")
+                    var thirdQuestion = prompt("A darkly hooded figure blocks the doorway. Do you ask him to move, or pay him 1 coin to move? \n\nask or pay");
+                    if (thirdQuestion === "ask"){
+                      alert ('HOW DARE YOU DEMAND SOMETHING OF ME! \n\n The darkly hooded stranger has killed you.')
+                    }
+                    else if (thirdQuestion === "pay"){
+                      alert('Wise choice, you may enter.')
+                    }
+                    var fourthQuestion = prompt("STORE CLERK:Welcome!, Welcome! So glad you have choosen to shop with us today! Can I interest you in a winter coat? I heard a Winter storm is on the way! \n\n accept or decline")
+                    if (fourthQuestion === "accept"){
+                      alert('Great, that will be 20 coins!')
+
+                      var fifthQuestion = prompt("Do you pay 20 coins, and leave in peace? Or take the Store Clerk by surprise and attack? \n\n pay or attack");
+                      if (fifthQuestion === 'pay'){
+                        alert('You pay for the jacket, put it on, and begin walking outside. As you exit, you spook the darlky hooded figure, resulting in your death. \n\nGAME OVER!')
+                      }
+                      else if (fifthQuestion === 'attack'){
+                        alert('You jump the store clerk, quickly subduing your enemy, grab the jacket, and sprint out the back door! \n\n Unfortunetly, you run right into the town sherif, and are arrested. GAME OVER!')
+                      }
+                    }
+                    else if (fourthQuestion === 'decline') {
+                      alert('Well then, please leave my store!')
+                    }
+                    var sixthQuestion = prompt("Would you like to leave peacefully? Or attack the store clerk in anger over his sudden rudeness? \n\n peaceful or attack");
+                      if (sixthQuestion === "attack")
+                      alert('OH NO! The clerk dodged your attack and stabbed you in the throat. \n\n GAME OVER!')
+                      else if (sixthQuestion === "peaceful"){
+                      alert('As you walk out the front door, you accidently scare the darkly hooded figure, resulting in him stabbing you. \n\nGAME OVER!')
+                    }
+                }
+                else if (secondQuestion === "deeper"){
+                  alert ('As you head deeper into the forest, the tempurature begins to drop. Darkness begins to close in. Out of pure stubborness, you continue deeper, and freeze to death. \n\n GAME OVER!')
+                }
+            }
+          else if (firstQuestion === "left"){
+            alert("Oh no! You were robbed and killed by a bandit!");
+          }
+          else {
+            alert ("Don't want to play? Comeback when you do!")
+          }
+
+          console.log("story");
+          }
+          </script>
+        </div>
+      </div>
+  </body>
+</html>
