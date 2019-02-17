@@ -6,7 +6,7 @@ var imgBlankGaming = "./images/marvel.jpg";
 var imgActual = new Array();
 
 
-function Gaming(){
+function prtimgGaming(){
 	randomImg();
     for(var i = 0; i < imgTag.length; i++){
         document.getElementById(imgTag[i]).src= imgBlankGaming;
