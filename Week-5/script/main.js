@@ -5,14 +5,12 @@ var imgBlankGaming = "./images/Marvel.jpg";
 
 var imgActual = new Array();
 
-
 function prtimgGaming(){
-	randomImg();
+	 randomImg();
     for(var i = 0; i < imgTag.length; i++){
         document.getElementById(imgTag[i]).src= imgBlankGaming;
     }
 }
-
 function randomImg(){
 
     var imgLink = ['./images/Spider.jpg', './images/Ironman.jpg', './images/Baddeadpool.jpg', './images/Hulk.jpg',  "./images/Captain.jpg",  "./images/Thor.jpg", "./images/Deadpool.jpg", "./images/Avengers.jpg", "./images/Widow.jpg", "./images/Shield.jpg"];
@@ -29,8 +27,6 @@ function randomImg(){
         }
     }
 }
-
 function flipImg(number){
-
-document.getElementById(imgTag[number]).src= imgActual[number];
+    document.getElementById(imgTag[number]).src= imgActual[number];
 }
