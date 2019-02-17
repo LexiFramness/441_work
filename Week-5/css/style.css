@@ -1,0 +1,23 @@
+html{
+	background: black;
+  height: 100%;
+  width: 100%;
+}
+.memBoard{
+	background: red;
+	width: 90%;
+	height: 100%;
+	padding: 10px;
+	margin: 0 auto;
+}
+table {
+	padding: 3px;
+	margin: 0 auto;
+	text-align: center;
+}
+.tableSet {
+	padding: 2px;
+}
+.Button {
+  padding-left: 92%;
+}
