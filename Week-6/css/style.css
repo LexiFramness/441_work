@@ -33,12 +33,12 @@ table {
 h1 {
 	font-size: 20px;
 	font-weight: 100;
-	color: aliceblue;
+	color: blue;
 }
 h2 {
 	font-weight: 100;
 	padding: 5px;
-	color: aliceblue;
+	color: blue;
 }
 .heading{
 	background: red;
