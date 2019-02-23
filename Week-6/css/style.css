@@ -1,0 +1,70 @@
+html{
+	background: black;
+  height: 100%;
+  width: 100%;
+	font-family: 'Major Mono Display', monospace;
+}
+.memBoard{
+	background: red;
+	width: 90%;
+	height: 100%;
+	padding: 10px;
+	margin: 0 auto;
+}
+table {
+	padding: 3px;
+	margin: 0 auto;
+	text-align: center;
+}
+.tableSet {
+	padding: 2px;
+}
+.Button {
+  padding-left: 92%;
+}
+.player-info{
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  clear: left;
+  height: auto;
+  z-index: 0;
+}
+h1 {
+	font-size: 20px;
+	font-weight: 100;
+	color: aliceblue;
+}
+h2 {
+	font-weight: 100;
+	padding: 5px;
+	color: aliceblue;
+}
+.heading{
+	background: red;
+	width: auto;
+	height: auto;
+	padding: 20px;
+	margin: -10px;
+}
+input[type=text] {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+input[type=number] {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=number]:focus {
+    border-color:#333;
+}
