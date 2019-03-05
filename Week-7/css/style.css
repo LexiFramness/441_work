@@ -1,0 +1,54 @@
+html, body {
+    background-color: black;
+    margin: -10px;
+    height: 100%;
+    font-family: 'Major Mono Display', monospace;
+}
+#Artwork {
+    display: block;
+    height: 50%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    width: 50%;
+    height: auto;
+}
+#Title {
+ text-align: center;
+ font-size: 60px;
+ color: white;
+ margin: 10px;
+}
+#Director {
+ text-align: center;
+ font-size: 30px;
+ color: white;
+ margin: 10px;
+}
+#Year {
+ text-align: center;
+ font-size: 30px;
+ color: white;
+ margin: 20px;
+}
+#Description {
+ text-align: center;
+ font-size: 25px;
+ color: white;
+ margin: 10px;
+ padding-right: 30px;
+ padding-left: 30px;
+}
+button{
+  border:3px;
+  position:relative;
+  height:30px;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.buttonHolder{
+    text-align: center;
+    padding: 10px;
+}
