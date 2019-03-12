@@ -1,0 +1,118 @@
+
+html {
+    background-color: black;
+    font-family: 'Major Mono Display', monospace;
+}
+
+.topHeading {
+    font-size: 70px;
+    text-align: center;
+    color: white;
+}
+.characterPic {
+    text-align: center;
+    background: #005A5B;
+    padding: 50px;
+    margin: -9px;
+    border: 0;
+    height: 500px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.characterSide {
+    display: inline-block;
+    padding: 20px;
+    vertical-align: middle;
+
+}
+
+.characterSideFar {
+    display: inline-block;
+    padding: 20px;
+    vertical-align: middle;
+
+}
+
+.characterCenter {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+hr.style {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#title {
+    font-size: 70px;
+    text-align: center;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    color: white;
+}
+
+#description {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+#characterOutL, #characterOutL1 {
+    position: absolute;
+    left: 90px;
+    top: 400px;
+    opacity: 0.2;
+}
+
+#characterOutR, #characterOutR1 {
+    position: absolute;
+    left: 1200px;
+    top: 400px;
+    opacity: 0.2;
+}
+
+#characterR, #characterR1 {
+    position: absolute;
+    left: 280px;
+    top: 350px;
+    opacity: 0.7;
+}
+
+#characterL, #characterL1 {
+    position: absolute;
+    left: 920px;
+    top: 350px;
+    opacity: 0.7;
+}
+
+#characterCenter, #characterCenter1 {
+    position: absolute;
+    left: 560px;
+    top: 270px;
+}
+button {
+    background-color: #005A5B;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+.button {
+    text-align: center;
+}
+
+.answer5, .answer4, .answer3, .answer2, .answer1  {
+    font-size: 100px;
+    text-align: center;
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+}
