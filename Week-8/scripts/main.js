@@ -91,13 +91,6 @@ $(function () {
             $("#title").html(charList[x].toStringTitle());
             $("#description").html(charList[x].toStringDescription());
 
-            timeRestart();
-
-            $(".answer5").fadeOut("slow");
-            $(".answer4").fadeOut("slow");
-            $(".answer3").fadeOut("slow");
-            $(".answer2").fadeOut("slow");
-            $(".answer1").fadeOut("slow");
       });
 });
 
