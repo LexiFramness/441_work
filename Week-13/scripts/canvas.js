@@ -6,7 +6,7 @@ var square1, square2;
 var direction;
 var questions;
 var squareArray = [];
-var lives = 3;
+var lives = 5;
 $(document).ready(function(){
     setup();
     $(this).keypress(function(event){
@@ -116,7 +116,7 @@ function drawSquare()
     ctx.font = "30px Arial";
     ctx.fillText("Lives: " + lives, 10, 50);
     if(lives <= 0){
-      lives = 3;
+      lives = 5;
       square1 = new Square(100,100,50,50,"#0000FF");
     }
 }
