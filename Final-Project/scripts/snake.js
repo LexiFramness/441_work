@@ -6,7 +6,6 @@ function Snake() {
   this.yspeed = 0;
   this.total = 0;
   this.tail = [];
-
 //eating of snake food
   this.eat = function(pos) {
     var d = dist(this.x, this.y, pos.x, pos.y);
@@ -17,12 +16,11 @@ function Snake() {
       return false;
     }
   }
-
+//snake location
   this.dir = function(x, y) {
     this.xspeed = x;
     this.yspeed = y;
   }
-
 //snake deaths
   this.death = function() {
     for (var i = 0; i < this.tail.length; i++) {
@@ -35,8 +33,6 @@ function Snake() {
       }
     }
   }
-
-
 //update snake location
   this.update = function() {
     for (var i = 0; i < this.tail.length - 1; i++) {
@@ -45,14 +41,11 @@ function Snake() {
     if (this.total >= 1) {
       this.tail[this.total - 1] = createVector(this.x, this.y);
     }
-
     this.x = this.x + this.xspeed * scl;
     this.y = this.y + this.yspeed * scl;
-
     this.x = constrain(this.x, 0, width - scl);
     this.y = constrain(this.y, 0, height - scl);
   }
-
 //display tail
   this.show = function() {
     fill(255);
@@ -60,7 +53,5 @@ function Snake() {
       rect(this.tail[i].x, this.tail[i].y, scl, scl);
     }
     rect(this.x, this.y, scl, scl);
-
   }
-
 }

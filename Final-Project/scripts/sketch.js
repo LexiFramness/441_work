@@ -30,8 +30,8 @@ function draw() {
   snake.update();
   snake.show();
 
-
-  fill(255, 0, 100);
+//random color for food, constantly changing colors
+  fill(random(255), random(255), random(255));
   rect(food.x, food.y, scl, scl);
 }
 //arrow press controlling snake location
