@@ -7,9 +7,9 @@ var food;
 function setup() {
   createCanvas(900, 600);
   snake = new Snake();
-  frameRate(5);
+  frameRate(7);
   pickLocation();
-  alert("Use the arrow keys to contorl the snake. If you run into yourself, or the edge of the map, the game automatically tail length.")
+  alert("Use the arrow keys to contorl the snake. If you run into yourself, or the edge of the map, the game will automatically reset tail length.")
 
 }
 
